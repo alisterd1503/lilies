@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+	<title>Lillies</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/apple-touch-icon.png">
+  	<link rel="icon" type="image/png" sizes="32x32" href="resources/favicon-32x32.png">
+  	<link rel="icon" type="image/png" sizes="16x16" href="resources/favicon-16x16.png">
+  	<link rel="shortcut icon" type="image/x-icon" href="resources/favicon.ico"/>
+  	<link rel="manifest" href="resources/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="scripts/flowerobj.js"></script>
+    <script src="scripts/sketch.js"></script>
+  </head>
+  <body>
+    <div id='info'>
+      Lillies
+    </div>
+
+    <img id='settings-icon' src='resources/settings-thin.svg'>
+
+    <div id="settings-panel">
+      <div id="panel-header">
+        Settings
+        <div id="close-button">×</div>
+      </div>
+      <div id="panel-content">
+
+        <h3>BACKGROUND COLOUR</h3>
+
+        <div class="bg-color-setting">
+          <input type="color" id="bg-color" value="#FF748B"><br>
+        </div>
+        
+        <h3>FLOWER COLOURS</h3>
+
+        <div class="color-group">
+          <div class="color-setting">
+              <input type="color" id="petal-color" value="#F72C5B">
+              <label for="petal-color">Petal</label>
+          </div>
+
+          <div class="color-setting">
+              <input type="color" id="leaf-color" value="#4CAF50">
+              <label for="leaf-color">Leaf</label>
+          </div>
+
+          <div class="color-setting">
+              <input type="color" id="stamen-color" value="#E4F1AC">
+              <label for="stamen-color">Stamen</label>
+          </div>
+
+          <div class="color-setting">
+              <input type="color" id="ball-color" value="#A7D477">
+              <label for="ball-color">Ball</label>
+          </div>
+        </div>
+
+        <h3>FLOWER STRUCTURE</h3>
+
+        <label for="petal-count">Petal Count</label>
+        <input type="range" id="petal-count" min="0" max="12" value="6">
+        <span class="range-display" id="petal-count-display">6</span><br>
+
+        <label for="leaf-count">Leaf Count</label>
+        <input type="range" id="leaf-count" min="0" max="4" value="2">
+        <span class="range-display" id="leaf-count-display">2</span><br>
+
+        <label for="stamen-count">Stamen Count</label>
+        <input type="range" id="stamen-count" min="0" max="20" value="20">
+        <span class="range-display" id="stamen-count-display">20</span><br>
+
+      </div>
+    </div>
+
+    <img id='reset-icon' src='resources/reload-thin.svg'>
+  </body>
+</html>
